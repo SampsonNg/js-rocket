@@ -1,3 +1,15 @@
 body{
-	background-color:grey
+	background-color:#F5DEB3
+}
+
+.cool{
+	width:1000px;
+	height :1000px;
+	background-color: lightpink;
+	transition:background-color 2s;
+}
+
+.cool.red{
+	background-color: magenta;
+	transition:background-color 0.25s;
 }
