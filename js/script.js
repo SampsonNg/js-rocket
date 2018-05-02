@@ -9,6 +9,7 @@ var docoolstuff = function(){
 	}
 };
 
+
 var car = {
 	make:'toyota',
 	type:'altis',

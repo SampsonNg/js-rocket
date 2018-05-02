@@ -35,10 +35,29 @@
 	transition: bottom 20000ms;
 }
 
-.rocket.flying{
+body.bodystate1 .rocket{
+	transition: none;
+}
+
+body.bodystate3 .rocket,
+body.bodystate4 .rocket{
 	bottom: 1000px;
 
 }
+
+.state1,
+.state2,
+.state3,
+.state4,
+.state5{
+	display: none;
+}
+
+body.bodystate1 .state1{display: block;}
+body.bodystate2 .state2{display: block;}
+body.bodystate3 .state3{display: block;}
+body.bodystate4 .state4{display: block;}
+body.bodystate5 .state5{display: block;}
 
 
 a{
