@@ -5,15 +5,25 @@ var changestate = function(state){
 	clearInterval(timer);
 	var countdownnumber = 10;
 	document.getElementById('countdown').innerHTML = countdownnumber;
+	document.getElementById('nervous').className= 'nervous';
+	document.getElementById('cantwait').className= 'cantwait';
 
 	if (state== 2){
 		timer = setInterval(function(){
 			countdownnumber = countdownnumber -1;
 			document.getElementById('countdown').innerHTML = countdownnumber;
+			if (countdownnumber==5) {
+				document.getElementById('nervous').className= 'nervous show';
+			};
+			if (countdownnumber==3) {
+				document.getElementById('nervous').className= 'nervous';
+				document.getElementById('cantwait').className= 'cantwait show';
+			}
 			if (countdownnumber == 0){
+				document.getElementById('cantwait').className= 'cantwait';
 				changestate(3)
 			}
-		},900);
+		},800);
 		
 	}else if(state == 3){
 		var success = setTimeout(function(){
