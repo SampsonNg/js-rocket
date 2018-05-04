@@ -1,5 +1,9 @@
 console.log('Hiiiii friends')
 
+setTimeout(function(){
+	location.href='rocket.html'
+} ,3000);
+
 var docoolstuff = function(){
 	var thatclass = document.getElementById('cool').className;
 	if (thatclass == 'cool'){
